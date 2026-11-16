@@ -14,13 +14,13 @@
   - [x] Còpia de seguretat del codi original desada a `index.backup.html`.
   - [x] Rebateig complet a **Empatik** (`EM`), desvinculació i nota d'inspiració pedagògica dins `#rules-modal`, i migració transparent de claus `localStorage` (`empatik_*_v1` amb *fallback* des d'`ikonikus_*_v1`).
   - [x] **Bloc A · Robustesa Tecnopedagògica i Dinàmica d'Aula**:
-    - [x] Autodesat de sessió activa (`ikonikus_active_session_v1`) i Diari d'Empatia persistent (`ikonikus_diary_history_v1`) a `localStorage`, amb bàner de recuperació (`Reprendre sessió`) i botó `Buida el Diari` amb confirmació en dos clics.
+    - [x] Autodesat de sessió activa (`empatik_active_session_v1`) i Diari d'Empatia persistent (`empatik_diary_history_v1`) a `localStorage`, amb bàner de recuperació (`Reprendre sessió`) i botó `Buida el Diari` amb confirmació en dos clics.
     - [x] Píndoles clicables de vocabulari emocional (16 matisos DUA) a la Fase 3 i bateig lliure de metàfora (`#custom-metaphor-input`) quan s'activa el mode «Només símbols» (sense revelar etiquetes als `aria-label`).
     - [x] Millores al Mode Assemblea: camp opcional per al nom del Protagonista/Narrador de la ronda i botons de control de vots (`−` / `+`).
     - [x] Generador de situacions sense repeticions dins de cada àmbit (`state.usedPrompts`) i modalitats **Cooperatives d'equip** (`1 volta` i `2 voltes`) al Mode Grups.
   - [x] **Bloc B · Noves Funcionalitats Pedagògiques**:
     - [x] Temporitzador visual opcional de debat (`60s / 90s / 2m`, pausa i reinici) amb barra de progrés suau a les fases de debat d'Assemblea i de reflexió.
-    - [x] Creador de cartes personalitzades de l'alumnat (`#custom-cards-modal`, `ikonikus_custom_cards_v1`) amb selector ràpid d'emojis i integració automàtica a la baralla.
+    - [x] Creador de cartes personalitzades de l'alumnat (`#custom-cards-modal`, `empatik_custom_cards_v1`) amb selector ràpid d'emojis i integració automàtica a la baralla.
   - [x] **Bloc C · Modernització Frontend (Baseline 1.0, WCAG 2.1 AA i Bugfixes)**:
     - [x] Migració de tots els 6 modals a `<dialog>` HTML5 natiu amb `.showModal()`, `::backdrop`, `closedby="any"` / `closedby="none"` + fallback JS i full d'impressió multipàgina dedicat (`#diary-print-sheet`).
     - [x] Selector de modalitat amb `<input type="radio">` natius i `:has(:checked)` / `:has(:focus-visible)`.
@@ -29,9 +29,12 @@
     - [x] Disseny d'alta visibilitat en Mode Assemblea (`148×198px`) + botó de Pantalla Completa (`Fullscreen API`).
     - [x] Correcció dels bugs de baralla duplicada a `dealAssemblyBoardCards()`, reaparició de cartes descartades al *mulligan* (`drawCard` amb `excludedIds`), i typo `active-chooser`.
 - **Punt exacte on ens hem quedat**:
-  - `index.html` i `Index.html.txt` sincronitzats amb tots els canvis verificats, i `index.backup.html` preservat sense modificacions.
+  - `index.html` i `Index.html.txt` sincronitzats amb tots els canvis verificats, `index.backup.html` preservat sense modificacions i tot pujat a GitHub (`origin/main`).
 
 ## 3. Full de Ruta d'Implementació (Roadmap / Propers Passos)
+- **Tasques immediates per a la següent sessió**:
+  - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt`.
+  - [ ] Sincronitzar el PC de sobretaula amb `origin/main` i reanomenar la carpeta arrel de `JOC - Ikonikus` a `JOC - Empatik` als dos equips (i opcionalment el repositori a GitHub).
 - **Millores futures i backlog opcional**:
   - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
   - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
