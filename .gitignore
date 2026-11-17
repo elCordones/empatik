@@ -1,0 +1,19 @@
+# Fitxers de sistema operatiu
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Fitxers temporals i d'editors
+*.tmp
+*.bak
+*~
+.vscode/
+.idea/

@@ -28,24 +28,30 @@
     - [x] `View Transitions API` (`runTransition`) respectant `@media (prefers-reduced-motion: reduce)`.
     - [x] Disseny d'alta visibilitat en Mode Assemblea (`148×198px`) + botó de Pantalla Completa (`Fullscreen API`).
     - [x] Correcció dels bugs de baralla duplicada a `dealAssemblyBoardCards()`, reaparició de cartes descartades al *mulligan* (`drawCard` amb `excludedIds`), i typo `active-chooser`.
-  - [x] **Infraestructura i Sincronització AGY Sync**:
-    - [x] Repositori a GitHub reanomenat de forma neta a `elCordones/empatik`.
+  - [x] **Infraestructura, Publicació i Sincronització AGY Sync**:
+    - [x] Repositori a GitHub reanomenat de forma neta a `elCordones/empatik` i canviat a visibilitat Pública.
+    - [x] Desplegament web oficial via **GitHub Pages** actiu a: `https://elcordones.github.io/empatik/`.
+    - [x] Nou favicon SVG vectorial propi (`favicon.svg`) creat i enllaçat amb fallback inline i `apple-touch-icon`.
+    - [x] Metaetiquetes Open Graph, Twitter Cards, SEO i previsualització afegides a `index.html` i `Index.html.txt`.
+    - [x] Documentació de projecte oberta `README.md` amb insígnies, explicació pedagògica, DUA i guia docent d'ús.
+    - [x] Fitxer `.gitignore` per a la neteja de fitxers temporals.
     - [x] Remote `origin` actualitzat a `https://github.com/elCordones/empatik.git`.
     - [x] Mapa de projectes `projects-map.json` a `agy-workspace-config` actualitzat a `"https://github.com/elCordones/empatik.git": "JOC - Empatik"` i sincronitzat amb GitHub.
     - [x] Carpeta local reanomenada amb èxit a `JOC - Empatik`.
 - **Punt exacte on ens hem quedat**:
-  - Carpeta local i Git perfectament sincronitzats a `JOC - Empatik`.
-  - Si es treballa també des del PC de sobretaula, seguir la guia [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md) per fer el `git pull` / sync.
-  - Pendent quan es vulgui: publicar la versió actualitzada a Google Sites incrustant `index.html` (o `Index.html.txt`).
+  - Web pública viva a `https://elcordones.github.io/empatik/`.
+  - Repositori ordenat, documentat i enriquit amb favicon i metadades socials.
+  - Al PC de sobretaula, quan hi accedeixis, seguir [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md) per fer el sync.
+  - Opcional: actualitzar el codi incrustat a Google Sites amb el contingut d'`Index.html.txt`.
 
 ## 3. Full de Ruta d'Implementació (Roadmap / Propers Passos)
 - **Tasques immediates**:
   - [x] Reanomenar la carpeta arrel local en aquest ordinador de `JOC - Ikonikus` a `JOC - Empatik`.
+  - [x] Publicar i desplegar l'aplicació web a GitHub Pages (`https://elcordones.github.io/empatik/`).
+  - [x] Crear el favicon SVG oficial i documentar el `README.md` per a docents.
   - [ ] Al PC de sobretaula (quan hi accedeixis): executar `Sincronitzar AGY.bat` o actualitzar el remote d'`origin` segons la [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md).
-  - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt`.
+  - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt` (o enllaçar directament la URL de GitHub Pages).
 - **Millores futures i backlog opcional**:
   - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
   - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
-- **Millores futures i backlog opcional**:
-  - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
   - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
