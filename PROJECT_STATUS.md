@@ -52,6 +52,9 @@
   - [ ] Al PC de sobretaula (quan hi accedeixis): executar `Sincronitzar AGY.bat` o actualitzar el remote d'`origin` segons la [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md).
   - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt` (o enllaçar directament la URL de GitHub Pages).
 - **Millores futures i backlog opcional**:
+  - [ ] **Estudi i viabilitat del Mode Multidispositiu (auditat el 2026-11-17)**:
+    - Model recomanat: Arquitectura mestre-comandament (tipus Kahoot/Jackbox), amb Pissarra Digital com a tauler i dispositius de l'alumnat només com a comandament per votar o triar carta secreta.
+    - Infraestructura tècnica: WebSockets efímers en memòria (sense base de dades) per garantir compatibilitat amb xarxes escolars (que sovint bloquegen WebRTC P2P directe per AP Isolation).
+    - Privacitat: Compliment estricte del RGPD escolar, sales efímeres sense emmagatzemar dades personals, registres ni IPs.
   - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
-  - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
   - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
