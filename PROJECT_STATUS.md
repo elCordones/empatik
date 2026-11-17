@@ -8,8 +8,8 @@
   - `index.html` i `Index.html.txt`: Aplicació web completa autocontinguda (**Empatik**, monograma `EM`, 60 cartes base + creador de cartes de l'alumnat en `localStorage` sota claus `empatik_*_v1` amb migració automàtica des d'`ikonikus_*_v1`, 4 àmbits temàtics sense repeticions + banc docent, mode Assemblea amb protagonistes i vots `-1 / +1`, mode Grups competitiu/cooperatiu, temporitzador opcional de debat, bastida de vocabulari emocional i bateig de metàfores, autodesat de sessió, Diari d'Empatia persistent/imprimible/exportable i peu de pàgina de llicenciament AGPL v3 / CC BY-SA 4.0).
   - `index.backup.html`: Còpia de seguretat íntegra de la versió anterior prèvia a l'auditoria i modernització del 2026-11-16.
 
-## 2. Estat Actual i Punt de Control (Darrera sessió: 2026-11-16)
-- **Estat general**: Funcional, rebatejat a **Empatik** (sense conflictes de marca comercial) i completat amb totes les millores dels Blocs A (Robustesa Tecnopedagògica), B (Noves Funcionalitats) i C (Modernització Frontend i Bugfixes).
+## 2. Estat Actual i Punt de Control (Darrera sessió: 2026-11-17)
+- **Estat general**: Funcional, rebatejat a **Empatik** (sense conflictes de marca comercial) i completat amb totes les millores dels Blocs A (Robustesa Tecnopedagògica), B (Noves Funcionalitats) i C (Modernització Frontend i Bugfixes). Carpeta arrel local actualitzada oficialment a `JOC - Empatik`.
 - **Funcionalitats completades**:
   - [x] Còpia de seguretat del codi original desada a `index.backup.html`.
   - [x] Rebateig complet a **Empatik** (`EM`), desvinculació i nota d'inspiració pedagògica dins `#rules-modal`, i migració transparent de claus `localStorage` (`empatik_*_v1` amb *fallback* des d'`ikonikus_*_v1`).
@@ -32,14 +32,20 @@
     - [x] Repositori a GitHub reanomenat de forma neta a `elCordones/empatik`.
     - [x] Remote `origin` actualitzat a `https://github.com/elCordones/empatik.git`.
     - [x] Mapa de projectes `projects-map.json` a `agy-workspace-config` actualitzat a `"https://github.com/elCordones/empatik.git": "JOC - Empatik"` i sincronitzat amb GitHub.
+    - [x] Carpeta local reanomenada amb èxit a `JOC - Empatik`.
 - **Punt exacte on ens hem quedat**:
-  - Repositori GitHub i mapa AGY Sync llestos. Falta reanomenar la carpeta local a `JOC - Empatik` i executar la sincronització al PC de sobretaula.
+  - Carpeta local i Git perfectament sincronitzats a `JOC - Empatik`.
+  - Si es treballa també des del PC de sobretaula, seguir la guia [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md) per fer el `git pull` / sync.
+  - Pendent quan es vulgui: publicar la versió actualitzada a Google Sites incrustant `index.html` (o `Index.html.txt`).
 
 ## 3. Full de Ruta d'Implementació (Roadmap / Propers Passos)
 - **Tasques immediates**:
-  - [ ] Reanomenar la carpeta arrel local en aquest ordinador de `JOC - Ikonikus` a `JOC - Empatik`.
-  - [ ] Al PC de sobretaula: actualitzar el remote d'`origin` a `https://github.com/elCordones/empatik.git` i executar `Sincronitzar AGY.bat` (que reanomenarà la carpeta automàticament gràcies a `projects-map.json`).
+  - [x] Reanomenar la carpeta arrel local en aquest ordinador de `JOC - Ikonikus` a `JOC - Empatik`.
+  - [ ] Al PC de sobretaula (quan hi accedeixis): executar `Sincronitzar AGY.bat` o actualitzar el remote d'`origin` segons la [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md).
   - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt`.
+- **Millores futures i backlog opcional**:
+  - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
+  - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
 - **Millores futures i backlog opcional**:
   - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
   - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
