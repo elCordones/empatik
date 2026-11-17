@@ -28,13 +28,18 @@
     - [x] `View Transitions API` (`runTransition`) respectant `@media (prefers-reduced-motion: reduce)`.
     - [x] Disseny d'alta visibilitat en Mode Assemblea (`148×198px`) + botó de Pantalla Completa (`Fullscreen API`).
     - [x] Correcció dels bugs de baralla duplicada a `dealAssemblyBoardCards()`, reaparició de cartes descartades al *mulligan* (`drawCard` amb `excludedIds`), i typo `active-chooser`.
+  - [x] **Infraestructura i Sincronització AGY Sync**:
+    - [x] Repositori a GitHub reanomenat de forma neta a `elCordones/empatik`.
+    - [x] Remote `origin` actualitzat a `https://github.com/elCordones/empatik.git`.
+    - [x] Mapa de projectes `projects-map.json` a `agy-workspace-config` actualitzat a `"https://github.com/elCordones/empatik.git": "JOC - Empatik"` i sincronitzat amb GitHub.
 - **Punt exacte on ens hem quedat**:
-  - `index.html` i `Index.html.txt` sincronitzats amb tots els canvis verificats, `index.backup.html` preservat sense modificacions i tot pujat a GitHub (`origin/main`).
+  - Repositori GitHub i mapa AGY Sync llestos. Falta reanomenar la carpeta local a `JOC - Empatik` i executar la sincronització al PC de sobretaula.
 
 ## 3. Full de Ruta d'Implementació (Roadmap / Propers Passos)
-- **Tasques immediates per a la següent sessió**:
+- **Tasques immediates**:
+  - [ ] Reanomenar la carpeta arrel local en aquest ordinador de `JOC - Ikonikus` a `JOC - Empatik`.
+  - [ ] Al PC de sobretaula: actualitzar el remote d'`origin` a `https://github.com/elCordones/empatik.git` i executar `Sincronitzar AGY.bat` (que reanomenarà la carpeta automàticament gràcies a `projects-map.json`).
   - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt`.
-  - [ ] Sincronitzar el PC de sobretaula amb `origin/main` i reanomenar la carpeta arrel de `JOC - Ikonikus` a `JOC - Empatik` als dos equips (i opcionalment el repositori a GitHub).
 - **Millores futures i backlog opcional**:
   - [ ] Exportació/importació de paquets de cartes i situacions docents en format `.json` per compartir entre docents del mateix centre.
   - [ ] Proves interactives en navegador real (Desktop, tauleta i lector de pantalla) amb sessió d'aula pilot.
