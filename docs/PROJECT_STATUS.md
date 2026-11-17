@@ -5,8 +5,11 @@
 - **Públic destinatari / Usuaris**: Docents i alumnat d'Educació Primària i Secundària.
 - **Stack tecnològic**: HTML5 semàntic (`<dialog>` natiu, `<input type="radio">`), CSS3 (variables semàntiques, `:has(:checked)`, `prefers-reduced-motion`, estils d'impressió `@media print`, mode d'alta visibilitat per a pissarra digital) i JavaScript Vanilla (View Transitions API, Fullscreen API, persistència completa en `localStorage`).
 - **Arquitectura i fitxers clau**:
-  - `index.html` i `Index.html.txt`: Aplicació web completa autocontinguda (**Empatik**, monograma `EM`, 60 cartes base + creador de cartes de l'alumnat en `localStorage` sota claus `empatik_*_v1` amb migració automàtica des d'`ikonikus_*_v1`, 4 àmbits temàtics sense repeticions + banc docent, mode Assemblea amb protagonistes i vots `-1 / +1`, mode Grups competitiu/cooperatiu, temporitzador opcional de debat, bastida de vocabulari emocional i bateig de metàfores, autodesat de sessió, Diari d'Empatia persistent/imprimible/exportable i peu de pàgina de llicenciament AGPL v3 / CC BY-SA 4.0).
-  - `index.backup.html`: Còpia de seguretat íntegra de la versió anterior prèvia a l'auditoria i modernització del 2026-11-16.
+  - `index.html`: Aplicació web completa autocontinguda (**Empatik**, monograma `EM`, 60 cartes base + creador de cartes de l'alumnat en `localStorage` sota claus `empatik_*_v1` amb migració automàtica des d'`ikonikus_*_v1`, 4 àmbits temàtics sense repeticions + banc docent, mode Assemblea amb protagonistes i vots `-1 / +1`, mode Grups competitiu/cooperatiu, temporitzador opcional de debat, bastida de vocabulari emocional i bateig de metàfores, autodesat de sessió, Diari d'Empatia persistent/imprimible/exportable i peu de pàgina de llicenciament AGPL v3 / CC BY-SA 4.0).
+  - `favicon.svg`: Icona vectorial oficial d'Empatik per a pestanyes de navegador i dispositius mòbils.
+  - `README.md`: Portada oficial del repositori per a la comunitat educativa amb botó de joc directe i llicències.
+  - `docs/PROJECT_STATUS.md`: Memòria tècnica viva, arquitectura, punts de control i roadmap del projecte.
+  - `docs/guia-sincronitzacio.md`: Guia de referència per a la sincronització de carpetes entre equips.
 
 ## 2. Estat Actual i Punt de Control (Darrera sessió: 2026-11-17)
 - **Estat general**: Funcional, rebatejat a **Empatik** (sense conflictes de marca comercial) i completat amb totes les millores dels Blocs A (Robustesa Tecnopedagògica), B (Noves Funcionalitats) i C (Modernització Frontend i Bugfixes). Carpeta arrel local actualitzada oficialment a `JOC - Empatik`.
@@ -40,17 +43,17 @@
     - [x] Carpeta local reanomenada amb èxit a `JOC - Empatik`.
 - **Punt exacte on ens hem quedat**:
   - Web pública viva a `https://elcordones.github.io/empatik/`.
-  - Repositori ordenat, documentat i enriquit amb favicon i metadades socials.
-  - Al PC de sobretaula, quan hi accedeixis, seguir [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md) per fer el sync.
-  - Opcional: actualitzar el codi incrustat a Google Sites amb el contingut d'`Index.html.txt`.
+  - Repositori ordenat, fitxers redundants eliminats i documentació organitzada dins de `docs/`.
+  - Al PC de sobretaula, quan hi accedeixis, seguir [guia-sincronitzacio.md](guia-sincronitzacio.md) per fer el sync.
 
 ## 3. Full de Ruta d'Implementació (Roadmap / Propers Passos)
 - **Tasques immediates**:
   - [x] Reanomenar la carpeta arrel local en aquest ordinador de `JOC - Ikonikus` a `JOC - Empatik`.
   - [x] Publicar i desplegar l'aplicació web a GitHub Pages (`https://elcordones.github.io/empatik/`).
   - [x] Crear el favicon SVG oficial i documentar el `README.md` per a docents.
-  - [ ] Al PC de sobretaula (quan hi accedeixis): executar `Sincronitzar AGY.bat` o actualitzar el remote d'`origin` segons la [GUIA_SOBRETAULA_EMPATIK.md](file:///C:/Users/dcordone/Desktop/ANTIGRAVITY/JOC - Empatik/GUIA_SOBRETAULA_EMPATIK.md).
-  - [ ] Substituir el codi HTML incrustat a Google Sites pel contingut d'`index.html` / `Index.html.txt` (o enllaçar directament la URL de GitHub Pages).
+  - [x] Netejar fitxers redundants i reestructurar documentació tècnica a `docs/`.
+  - [ ] Al PC de sobretaula (quan hi accedeixis): executar `Sincronitzar AGY.bat` o actualitzar el remote d'`origin` segons [guia-sincronitzacio.md](guia-sincronitzacio.md).
+  - [ ] Enllaçar directament la URL de GitHub Pages a Google Sites.
 - **Millores futures i backlog opcional**:
   - [ ] **Estudi i viabilitat del Mode Multidispositiu (auditat el 2026-11-17)**:
     - Model recomanat: Arquitectura mestre-comandament (tipus Kahoot/Jackbox), amb Pissarra Digital com a tauler i dispositius de l'alumnat només com a comandament per votar o triar carta secreta.

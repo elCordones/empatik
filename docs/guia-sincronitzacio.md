@@ -20,9 +20,9 @@ Tens dues maneres de fer-ho: l'**Automàtica** (aprofitant el teu script de sinc
 El teu script `agy-sync.ps1` està programat per auto-reconciliar i rebatejar carpetes si detecta que el remote coincideix amb el mapa.
 
 1. **Tanca Antigravity / VS Code** al sobretaula (perquè cap procés tingui fitxers bloquejats).
-2. Obre una finestra de **PowerShell** dins de la carpeta actual:
+2. Obre una finestra de **PowerShell** dins de la carpeta del projecte:
    ```powershell
-   cd "C:\Users\dcordone\Desktop\ANTIGRAVITY\JOC - Ikonikus"
+   cd "$HOME\Desktop\ANTIGRAVITY\JOC - Ikonikus"
    ```
 3. Actualitza la URL remota del repositori cap a Empatik:
    ```powershell
@@ -49,7 +49,7 @@ Si prefereixes controlar el canvi de nom tu mateix:
    - A: `JOC - Empatik`
 3. Obre PowerShell a la nova carpeta:
    ```powershell
-   cd "C:\Users\dcordone\Desktop\ANTIGRAVITY\JOC - Empatik"
+   cd "$HOME\Desktop\ANTIGRAVITY\JOC - Empatik"
    git remote set-url origin https://github.com/elCordones/empatik.git
    git pull
    ```

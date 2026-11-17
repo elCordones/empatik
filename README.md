@@ -81,7 +81,7 @@ Només cal obrir el següent enllaç a qualsevol ordinador, pissarra digital, ta
 👉 **[https://elcordones.github.io/empatik/](https://elcordones.github.io/empatik/)**
 
 ### Opció B: Incrustació en Google Sites o entorns Moodle / Nodes
-Pots incrustar l'aplicació directament a la teva web de centre mitjançant un bloc d'incrustació HTML copiant el codi de `index.html` (o el fitxer auxiliar `Index.html.txt`).
+Pots incrustar l'aplicació directament a la teva web de centre mitjançant un bloc d'incrustació utilitzant la URL directa de GitHub Pages (`https://elcordones.github.io/empatik/`) o copiant el codi de `index.html`.
 
 ---
 
@@ -89,11 +89,13 @@ Pots incrustar l'aplicació directament a la teva web de centre mitjançant un b
 
 ```text
 ├── index.html                   # Aplicació web completa autocontinguda (HTML5 + CSS3 + JS)
-├── Index.html.txt               # Versió en text pla per incrustar fàcilment a Google Sites
 ├── favicon.svg                  # Icona vectorial representativa d'Empatik
 ├── README.md                    # Documentació oficial i guia docent per a GitHub Pages
-├── PROJECT_STATUS.md            # Estat tècnic, checkpoints de continuïtat i roadmap de desenvolupament
-└── GUIA_SOBRETAULA_EMPATIK.md   # Guia per a la sincronització en equips de sobretaula
+├── .gitignore                   # Exclusió de fitxers de sistema operatiu
+│
+└── docs/                        # Documentació tècnica i continuïtat
+    ├── PROJECT_STATUS.md        # Estat tècnic, arquitectura i roadmap
+    └── guia-sincronitzacio.md   # Referència de sincronització entre equips
 ```
 
 ---
